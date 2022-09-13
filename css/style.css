@@ -10,18 +10,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
     font-family: "Jost";
+    margin:0;
 }
 .nav-bar {
     padding: 0.75rem;
     background-color: #7535F9;
     display: flex;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    color: #fff;
 }
-.nav-bar li {
+.nav-bar li, .home-menu li {
     list-style: none;
     display: inline-block;
-    color: #fff;
-    padding-right: 1rem;
+    padding-right: 3rem;
 }
 .nav-bar ul  {
     padding: 1.5rem;
+}
+.nav-bar nav {
+    position: absolute;
+    right: 0;
+}
+.container {
+    width: 90%;
+    max-width: 90%;
+    
+}
+.home-menu ul {
+    text-align: center;
 }
