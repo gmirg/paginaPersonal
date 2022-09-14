@@ -1,4 +1,4 @@
-*html {
+* html {
     box-sizing: border-box;
   }
 *, *::before, *::after {
@@ -11,14 +11,17 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: "Jost";
     margin:0;
-    background: rgb(117,53,249);
-    background: radial-gradient(circle, rgba(117,53,249,1) 59%, rgba(107,128,221,1) 95%);   
+}
+body#inicio {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 59%, rgba(217,3,1,1) 95%); 
 }
 .nav-bar {
     padding: 0.75rem;
-    background-color: #7535F9;
+    background-color: #222222;
     display: flex;
     box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    text-transform: none;
     color: #fff;
 }
 .nav-bar li, .home-menu li {
@@ -34,8 +37,8 @@ body {
     right: 0;
 }
 .container {
-    width: 90%;
-    max-width: 90%;
+    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 }
 .home-menu ul {
@@ -53,9 +56,52 @@ body {
     text-align: center;
     font-size: 120px;
     margin-bottom: 10px;
-    color:#fff;
+    color:#d90301;
     }
+.center h1:hover, nav li:hover  {
+    text-shadow: 3px 3px 6px rgb(217, 3, 1),-5px 8px 25px rgb(0, 0, 0);
+}
+
 .center nav {
     font-size: 30px;
-    color:#fff;
+    color:#d90301;
+}
+.active {
+    font-weight: bold;
+}
+section{
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+    padding-top: 50px;
+  }
+aside {
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+figure {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+figcaption {
+    padding: 20px 5px;
+}
+div.textRight {
+    float: right;
+    width: 60%;
+    text-justify: inter-word;
+}
+.leanr img {
+    width: 200px;
+    height: auto;
+    ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    box-shadow: 0 6px 16px -6px black;
+    z-index: -1;
+    border: 12px solid #ffffff;
+    text-emphasis: none;
 }
