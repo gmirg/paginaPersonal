@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: "Jost";
     margin:0;
+    background: rgb(117,53,249);
+    background: radial-gradient(circle, rgba(117,53,249,1) 59%, rgba(107,128,221,1) 95%);   
 }
 .nav-bar {
     padding: 0.75rem;
@@ -34,8 +36,26 @@ body {
 .container {
     width: 90%;
     max-width: 90%;
-    
+    margin: 0 auto;
 }
 .home-menu ul {
     text-align: center;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+}
+.center h1 {
+    text-align: center;
+    font-size: 120px;
+    margin-bottom: 10px;
+    color:#fff;
+    }
+.center nav {
+    font-size: 30px;
+    color:#fff;
 }
