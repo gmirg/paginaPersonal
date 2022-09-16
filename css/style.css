@@ -1,33 +1,50 @@
 html {
     box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Jost";
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
 }
-a:link, a:visited,  a:hover, a:active {
+
+a:link,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
     text-decoration: none;
 }
+
 body {
     font-family: "Jost";
-    margin:0;
+    margin: 0;
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%23fd684a' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+
 body#inicio {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 59%, rgba(217,3,1,1) 95%); 
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 59%, rgba(217, 3, 1, 1) 95%);
 }
+
 .nav-bar {
     padding: 0.75rem;
-    background-color: rgba(217,3,1,1);
+    background-color: rgba(217, 3, 1, 1);
     display: flex;
     box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     text-transform: none;
@@ -38,30 +55,38 @@ body#inicio {
     width: 100%;
     z-index: 100;
 }
-.nav-bar li, .home-menu li {
+
+.nav-bar li,
+.home-menu li {
     list-style: none;
     display: inline-block;
     padding-right: 3rem;
 }
-.nav-bar ul  {
+
+.nav-bar ul {
     padding: 1.5rem;
 }
+
 .nav-bar nav {
     position: absolute;
     right: 0;
 }
+
 .main {
     width: 100%;
     margin-top: 150px;
 }
+
 .wrapper {
     display: flex;
     max-width: 80%;
     margin: 0 auto;
 }
+
 .home-menu ul {
     text-align: center;
 }
+
 .center {
     position: absolute;
     left: 50%;
@@ -70,23 +95,28 @@ body#inicio {
     padding: 10px;
     text-align: center;
 }
+
 .center h1 {
     text-align: center;
     font-size: 120px;
     margin-bottom: 10px;
-    color:#d90301;
-    }
-.center h1:hover, nav li:hover  {
-    text-shadow: 3px 3px 6px rgb(217, 3, 1),-5px 8px 25px rgb(0, 0, 0);
+    color: #d90301;
+}
+
+.center h1:hover,
+nav li:hover {
+    text-shadow: 3px 3px 6px rgb(217, 3, 1), -5px 8px 25px rgb(0, 0, 0);
 }
 
 .center nav {
     font-size: 30px;
-    color:#d90301;
+    color: #d90301;
 }
+
 .active {
     font-weight: bold;
 }
+
 section {
     flex: 60%;
     margin: 1%;
@@ -94,6 +124,7 @@ section {
     background-color: rgba(250, 250, 250);
     border-radius: 10px;
 }
+
 aside {
     flex: 30%;
     margin: 1%;
@@ -101,28 +132,45 @@ aside {
     padding: 1%;
     border-radius: 10px;
 }
+
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .box-section {
     display: flex;
     align-items: center;
 }
-.leanr, .leanl {
+
+.leanr,
+.leanl {
     flex: 30%;
     text-align: center;
 }
+
 .lean {
     padding: 2%;
 }
+
 figcaption {
     padding: 20px 5px;
 }
-div.textRight, div.textLeft  {
+
+div.textRight,
+div.textLeft {
     flex: 60%;
     text-justify: inter-word;
 }
-.lean img, .leanr img, .leanl img {
+
+.lean img,
+.leanr img,
+.leanl img {
     box-shadow: 0 6px 16px -6px black;
     border: 12px solid #eaeaea;
 }
+
 .leanr img {
     width: 220px;
     height: auto;
@@ -130,8 +178,9 @@ div.textRight, div.textLeft  {
     -webkit-transform: rotate(-2deg);
     -o-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
-    
+
 }
+
 .leanl img {
     width: 300px;
     ms-transform: rotate(2deg);
@@ -139,9 +188,161 @@ div.textRight, div.textLeft  {
     -o-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
 }
+
 .card {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 1% 4%;
     margin-bottom: 15%;
+}
+
+.wobble-ver-right {
+    -webkit-animation: wobble-ver-right 0.8s both;
+    animation: wobble-ver-right 0.8s both;
+    animation-iteration-count: infinite;
+    animation-timing-function: 2000ms;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-9-16 13:15:2
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-ver-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-ver-right {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(0);
+        transform: translateY(0) rotate(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateY(-30px) rotate(6deg);
+        transform: translateY(-30px) rotate(6deg);
+    }
+
+    30% {
+        -webkit-transform: translateY(15px) rotate(-6deg);
+        transform: translateY(15px) rotate(-6deg);
+    }
+
+    45% {
+        -webkit-transform: translateY(-15px) rotate(3.6deg);
+        transform: translateY(-15px) rotate(3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateY(9px) rotate(-2.4deg);
+        transform: translateY(9px) rotate(-2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateY(-6px) rotate(1.2deg);
+        transform: translateY(-6px) rotate(1.2deg);
+    }
+}
+
+@keyframes wobble-ver-right {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(0);
+        transform: translateY(0) rotate(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateY(-30px) rotate(6deg);
+        transform: translateY(-30px) rotate(6deg);
+    }
+
+    30% {
+        -webkit-transform: translateY(15px) rotate(-6deg);
+        transform: translateY(15px) rotate(-6deg);
+    }
+
+    45% {
+        -webkit-transform: translateY(-15px) rotate(3.6deg);
+        transform: translateY(-15px) rotate(3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateY(9px) rotate(-2.4deg);
+        transform: translateY(9px) rotate(-2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateY(-6px) rotate(1.2deg);
+        transform: translateY(-6px) rotate(1.2deg);
+    }
+}
+
+.portfolio .one-third, .portfolio .half {
+    /*border: #d90301 2px solid;*/
+    display: flex;
+    margin: 1.5% 0;
+    align-items: center;
+    box-shadow: 0 6px 16px -6px black;
+}
+
+.portfolio h2 {
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0), -5px 1px 8px rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.one-third {
+    width: 426px;
+    height: 240px;
+}
+
+.half {
+    width: 640px;
+    height: 360px;
+}
+
+.jh {
+    background-image: url(/images/Jimi-Hendrix.jpg);
+    background-size: cover;
+}
+.tb {
+    background-image: url(/images/The-Beatles.jpg);
+    background-size: cover;
+}
+.bs {
+    background-image: url(/images/black-sabbath.jpg);
+    background-size: cover;
+}
+.db {
+    background-image: url(/images/david-bowie.jpg);
+    background-size: cover;
+}
+.jh video {
+    display: none;
+}
+.jh:hover {
+    background-image: none;
+}
+
+.jh:hover h2 {
+    display: none;
+}
+.jh:hover video {
+    display: block;
+}
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
 }
