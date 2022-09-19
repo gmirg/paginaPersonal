@@ -328,6 +328,31 @@ div.textLeft {
     background-image: url(/images/david-bowie.jpg);
     background-size: cover;
 }
+.sg {
+    background-image: url(/images/soundgarden.jpg);
+    background-size: cover;
+}
+.lz {
+    background-image: url(/images/Led-Zeppelin.jpg);
+    background-size: cover;
+}
+.sk {
+    background-image: url(/images/SLIPKNOT.jpg);
+    background-size: cover;
+    background-color: #000000;
+}
+.u2 {
+    background-image: url(/images/U2.jpg);
+    background-size: cover;
+}
+.md {
+    background-image: url(/images/mastodon.jpg);
+    background-size: cover;
+}
+.qotsa {
+    background-image: url(/images/qotsa.jpg);
+    background-size: cover;
+}
 .jh video {
     display: none;
 }
