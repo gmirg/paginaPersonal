@@ -1,4 +1,4 @@
-html {
+    html {
     box-sizing: border-box;
 }
 
@@ -17,11 +17,17 @@ h6 {
     font-family: "Jost";
     font-weight: bold;
 }
-
+h1 {
+    font-size:60px;
+    text-align: center;
+}
 a {
     text-decoration: none;
 }
-
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 a:link,
 a:visited,
 a:hover,
@@ -94,6 +100,7 @@ body#inicio {
     transform: translate(-50%, -50%);
     padding: 10px;
     text-align: center;
+    width: 80%;
 }
 
 .center h1 {
@@ -102,7 +109,6 @@ body#inicio {
     margin-bottom: 10px;
     color: #d90301;
 }
-
 .center h1:hover,
 nav li:hover {
     text-shadow: 3px 3px 6px rgb(217, 3, 1), -5px 8px 25px rgb(0, 0, 0);
@@ -120,14 +126,14 @@ nav li:hover {
 section {
     flex: 60%;
     margin: 1%;
-    padding: 1% 2%;
+    padding: 2%;
     background-color: rgba(250, 250, 250);
     border-radius: 10px;
 }
 
 aside {
     flex: 30%;
-    margin: 1%;
+    margin: 0 1%;
     width: 30%;
     padding: 1%;
     border-radius: 10px;
@@ -287,7 +293,8 @@ div.textLeft {
     }
 }
 
-.portfolio .one-third, .portfolio .half {
+.portfolio .one-third,
+.portfolio .half {
     /*border: #d90301 2px solid;*/
     display: flex;
     margin: 1.5% 0;
@@ -316,46 +323,57 @@ div.textLeft {
     background-image: url(/images/Jimi-Hendrix.jpg);
     background-size: cover;
 }
+
 .tb {
     background-image: url(/images/The-Beatles.jpg);
     background-size: cover;
 }
+
 .bs {
     background-image: url(/images/black-sabbath.jpg);
     background-size: cover;
 }
+
 .db {
     background-image: url(/images/david-bowie.jpg);
     background-size: cover;
 }
+
 .sg {
     background-image: url(/images/soundgarden.jpg);
     background-size: cover;
 }
+
 .lz {
     background-image: url(/images/Led-Zeppelin.jpg);
     background-size: cover;
 }
+
 .sk {
     background-image: url(/images/SLIPKNOT.jpg);
     background-size: cover;
     background-color: #000000;
 }
+
 .u2 {
     background-image: url(/images/U2.jpg);
     background-size: cover;
 }
+
 .md {
     background-image: url(/images/mastodon.jpg);
     background-size: cover;
 }
+
 .qotsa {
     background-image: url(/images/qotsa.jpg);
     background-size: cover;
 }
+
 .jh video {
     display: none;
 }
+
 .jh:hover {
     background-image: none;
 }
@@ -363,11 +381,51 @@ div.textLeft {
 .jh:hover h2 {
     display: none;
 }
+
 .jh:hover video {
     display: block;
 }
+
 video {
     /* override other styles to make responsive */
-    width: 100%    !important;
-    height: auto   !important;
+    width: 100% !important;
+    height: auto !important;
+}
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li label {
+    cursor: pointer;
+}
+input[type=text],input[type=mail]  {
+    padding: .5em;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 25%;
+}
+
+button {
+    background-color: #d90301;
+    color: #fff;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    border-radius: 10px ;
+    width: 25%;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+button:focus {
+    outline: none;
+    background-color: #44b927;
+}
+.answer:checked ~ label {
+    color:#d90301;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,18 +18,92 @@
 
 <body>
     <header class="nav-bar">
-        <a href="/index.html"><img class="logo" src="/apple-touch-icon.png" alt="logo" width="100px" height="auto" /></a> 
+        <a href="/index.html"><img class="logo" src="/apple-touch-icon.png" alt="logo" width="100px"
+                height="auto" /></a>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/historia.html">Historia</a></li>
-                <li><a href="/generos.html">Generos</a></li>
+                <li><a href="/generos.html">Géneros</a></li>
                 <li class="active">Trivia</li>
             </ul>
         </nav>
     </header>
     <div class="main">
         <div class="wrapper">
+            <section>
+                <article>
+                    <header>
+                        <h1>Rock Trivia</h1>
+                    </header>
+                    <p>El Rock es un género musical que lleva desde los años 50 del siglo XX entre nosotros por lo que,
+                        a lo largo de cerca de 70 años, ha dado lugar a numerosas anécdotas e historias que forman parte
+                        de la cultura popular.</p>
+                    <p>Si has llegado a esta web es que eres fan absoult@ de esta música, y para comprobarlo, vamos a
+                        hacerte una serie de preguntas.</p>
+                    <h2>Si aciertas estas preguntas ganarás una camiseta de tu grupo preferido!</h2>
+                    <p>Tan solo nos tienes que enviar tus datos en el formulario y te contactaremos para pedirte tu dirección si has acertado correctamente todas las preguntas.</p> 
+                    <form id="quiz">
+                        <div class="quiz-header">
+                            <h2 id="question1">¿Cuál es el nombre por el que es mejor conocido el cantante Paul Hewson?
+                            </h2>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="answer" id="a" class="answer">
+                                    <label for="a" id="a_text">Ozzy</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="answer" id="b" class="answer">
+                                    <label for="b" id="b_text">Bono</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="answer" id="c" class="answer">
+                                    <label for="c" id="c_text">Axl</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quiz-header">
+                        <h2 id="question2">¿Cuál de estos músicos no murió en 1970?</h2>
+                        <ul>
+                            <li>
+                                <input type="radio" name="answer2" id="d" class="answer">
+                                <label for="d" id="a_text">Jimi Hendrix</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer2" id="e" class="answer">
+                                <label for="e" id="b_text">Janis Joplin</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer2" id="f" class="answer">
+                                <label for="f" id="c_text">Keith Moon</label>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="quiz-header">
+                        <h2 id="question3">¿Qué banda de rock inglesa produjo tres guitarristas legendarios: Jeff Beck, Jimmy Page y Eric Clapton?</h2>
+                        <ul>
+                            <li>
+                                <input type="radio" name="answer3" id="g" class="answer">
+                                <label for="g" id="d_text">Lez Zeppelin</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer3" id="h" class="answer">
+                                <label for="h" id="e_text">The Yardbirds</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer3" id="i" class="answer">
+                                <label for="i" id="f_text">The Beatles</label>
+                            </li>
+                        </ul>
+                        </div>
+                        <label for="fname">Nombre:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Correo electrónico:</label><br>
+                        <input type="mail" id="lname" name="lname"><br><br>
+                        <button onclick="alert('Enviado, muchas gracias!')">Enviar</button>
+                   </form>
+                </article>
+            </section>
         </div>
     </div>
 </body>
